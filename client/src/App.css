@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+  --color-green: #4c956c;
+  --color-blue: #023C50;
+  --color-orange: #ff6c47;
+  --color-grey: #f4f6f6;
+  --color-light-blue: #f3fafc;
+  --color-dark-blue: #090446;
+}
+
+body {
+  background-color: var(--color-light-blue);
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-size: 3rem;
+  padding-left: 25px;
+  color: var(--color-grey);
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: var(--color-blue);
+}
+.canvas {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.canvas-card {
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, .2), 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  align-items: start;
+}
+.card2 {
+  height: 200px;
+}
+.heading {
+  font-family: 'Libre Franklin', sans-serif;
+  padding: 2px 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #bbbbbb;
+  background-color: var(--color-blue);
+  /* width: 200px; */
+  align-self: start;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.estimate-input {
+  font-size: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 200px;
+  padding: 7px;
+  align-self: flex-start;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.form-label {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-weight: bold;
+  color: #272727;
+  font-family: 'Biryani', sans-serif;
+  font-size: 1.3rem;
+  justify-self: end;
+}
+textarea {
+  font-family: 'Biryani', sans-serif;
+  font-size: 1rem;
+  margin: 10px 30px;
+  justify-self: stretch;
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.bar {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  justify-items: start;
+}
+button {
+  /* width: 100px; */
+  height: 50px;
+  font-size: 1rem;
+  font-weight: normal;
+  justify-self: end;
+  align-self: start;
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: var(--color-blue);
+  color: var(--color-grey);
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.gt-buttons {
+  justify-self: end;
+  align-self: start;
+}
+.b1 {
+  margin-right: 50px;
+}
+button:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  /* background-color: #353535; */
+}
+.bar2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: 'Biryani', sans-serif;
+  color: #c9c9c9;
+  justify-self: stretch;
+  margin: 10px 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.calendar {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-family: 'Biryani', sans-serif;
+  font-size: 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Canvas Display */
+.canvas-display {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, .2), 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  height: 800px;
+}
+.heading1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.heading2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #272727;
+}
+.display-title {
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--color-blue);
+  color: #bbbbbb;
+}
+.display-title p {
+ margin: 0;
+}
+.date-display {
+  padding: 20px;
+  align-self: flex-end;
+  justify-self: end;
+}
+.date-display p {
+  margin: 0;
+}
+.task-list-container {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 20px;
+}
+.task-list-row {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid; */
+  padding-top: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  /* background: var(--color-light-blue); */
+}
+.task-list-row:hover {
+  transform: scale(1.02);
+}
+.table-header{
+  justify-self: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.header-row {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding-bottom: 5px;
+}
+.estimate-cell {
+  justify-self: center;
+  align-self: center;
+}
+.task-row {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+.delete-task {
+  align-self: center;
+  justify-self: end;
+  margin-right: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: var(--color-orange);
+}
+.task-cell {
+  justify-self: start;
+}
